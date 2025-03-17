@@ -7,7 +7,7 @@ config();
 // Get allowed origins from the environment variable or use a default list
 const allowedOrigins = process.env.ANIWATCH_API_CORS_ALLOWED_ORIGINS
   ? process.env.ANIWATCH_API_CORS_ALLOWED_ORIGINS.split(",")
-  : ["http://localhost:4000", "https://ani-fire-five.vercel.app", "https://darkxside78.github.io"];
+  : ["https://darkxside78.github.io", "https://ani-fire-five.vercel.app", "https://darkxside78.github.io"];
 
 // CORS configuration
 const corsConfig = cors({
